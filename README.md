@@ -1,3 +1,7 @@
+## MK Sample here
+https://mksampleapp.herokuapp.com/
+Just to test things out (help students) 
+
 ## Starter code for simple MVC Node.js class project
 
 This is a minimal [Node.js](http://nodejs.org/)
