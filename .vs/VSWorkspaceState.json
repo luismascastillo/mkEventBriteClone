@@ -1,6 +1,14 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\controllers",
+    "\\models",
+    "\\static",
+    "\\static\\css",
+    "\\static\\img",
+    "\\static\\js",
+    "\\views"
   ],
+  "SelectedNode": "\\models\\events.test.js",
   "PreviewInSolutionExplorer": false
 }

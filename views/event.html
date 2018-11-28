@@ -3,24 +3,21 @@
     <title>Yay New Event</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-109718017-1"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129585750-1"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
 
-      gtag('config', 'UA-109718017-1');
+          gtag('config', 'UA-129585750-1');
     </script>
-
-
 </head>
 <body>
     <header>
         <img id="logo" src="http://som.yale.edu/sites/all/themes/common_assets/img/yalesom_shield-alt.svg" height="120" alt="logo">
     </header>
 
-    <title>Example Eventbrite App</title>
-
+    
     <main>
 
         <ul class="form-errors"></ul>
@@ -126,9 +123,17 @@
                 <option>30</option>
             </select>
             <br>
+
             <button type="submit" name="submit" class="btn">Submit</button>
 
         </form>
+        <form action="/rsvp/3" method="post">
+            <input type="email" id="email" name="email" />
+            <button type="submit" class="btn" name="submit">Submit</button>
+        </form>
+
+
+        <!-- To actually add the event.... -->
 
 
     </main>

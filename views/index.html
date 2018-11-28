@@ -8,16 +8,24 @@
     {{salutation}}
 </p>
 <div class="event">
-    <a>link to events</a>    
+    <a href="/events/new">Create New Event</a>
 </div>
 
-<div class="cat-holder">
+<ul>
+    {% for event in events %}
+    <li><a href="/events/{{event.id}}">{{event.title}}</a></li>
+    {% endfor %}
+
+</ul>
+
+<!--<div class="cat-holder">
     <input type="button" value="Next cat" id="next-cat">
     <img src="/static/img/cat0.jpg" alt="Cat zero">
     <img src="/static/img/cat1.jpg" alt="Cat one">
     <img src="/static/img/cat2.jpg" alt="Cat two">
     <img src="/static/img/cat3.jpg" alt="Cat three">
 </div>
+-->
 {% endblock %}
 
 {% block late_loading_js %}
