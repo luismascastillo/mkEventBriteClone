@@ -6,7 +6,8 @@
     "dependencies": {
         "express": "^4.15.4",
         "nodemon": "^1.18.4",
-        "nunjucks": "^3.0.1"
+        "nunjucks": "^3.0.1",
+        "mkkim91": "https://github.com/mkkim91/mkEventBriteClone"
     },
     "devDependencies": {
         "eslint": "^5.7.0",

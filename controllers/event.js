@@ -43,7 +43,7 @@ function eventDetail(request, response) {
     const eventId = Number(request.params.id);
     const event = events.getById(eventId);
     if (!event) {
-        response.status(404).send('No such event yo!');
+        response.status(404).send('No event avail for that one.');
     } else {
         response.render('eventDetail', { event: event });
     }
