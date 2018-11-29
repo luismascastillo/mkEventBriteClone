@@ -2,6 +2,10 @@
 // handles a request, writing the response.
 const events = require('../models/events.js');
 
+function create(request, response) {
+    response.render('newEvent', {});
+}
+
 function newEvent(request, response) {
     console.log(request.body);
     console.log(events);
@@ -50,6 +54,7 @@ function eventDetail(request, response) {
 }
 
 module.exports = {
+    create, 
     newEvent,
     eventDetail,
 }

@@ -32,6 +32,7 @@ app.use('/static', express.static('static'));
 
 // Now, attach our "controllers" to our "routes".
 app.get('/', indexControllers.index);
+app.get('/events/new', eventControllers.create);
 app.get('/events/new', eventControllers.newEvent);
 app.get('/events/:id', eventControllers.eventDetail);
 
