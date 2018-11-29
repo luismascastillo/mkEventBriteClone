@@ -9,6 +9,15 @@ function index(request, response) {
     response.render('index', contextData);
 }
 
+function eventDetail(request, response) {
+    response.json(allEvents.getById(request.params.id));
+}
+
+function event(request, response) {
+    response.render('Event');
+}
 module.exports = {
     index,
+    eventDetail,
+    event,
 };
